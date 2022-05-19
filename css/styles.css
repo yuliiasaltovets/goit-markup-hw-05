@@ -149,6 +149,7 @@ html {
 }
 .text-exemple-work:hover {
     opacity: 1;
+    
 }
 .text-exemple-work {
     position: absolute;
@@ -173,6 +174,8 @@ html {
     padding-right: 24px;
     padding-bottom: 63px;
     padding-left: 24px;
+
+    transform: translateY(100%);
     
 }
 
