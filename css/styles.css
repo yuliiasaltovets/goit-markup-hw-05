@@ -65,6 +65,10 @@ html {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
     z-index: 1;
+
+    opacity: 1;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transform: scale(1);
 }
 .backdrop.is-hidden {
     opacity: 0;
@@ -128,29 +132,20 @@ html {
 
     
 }
-.product-thumb {
-
-}
-
 .flex-element {
+    overflow: hidden;
+}
+.exemple-work-card:hover{
+    opacity: 1;
+    
+}
+
+.exemple-work-card {
     position: relative;
- 
-}
+    overflow: hidden;
 
-.hover-container {
-   
 }
-
-.hover-txt:hover {
-    opacity: 1;
-}
-
-.flex-element-hover:hover {
-    opacity: 1;
-}
-
-.hover-txt {
-    display: block;
+.text-exemple-work {
     position: absolute;
     top: 0;
     left: 0;
@@ -174,11 +169,14 @@ html {
     padding-bottom: 63px;
     padding-left: 24px;
 
+    z-index: 1;
+
     opacity: 0;
     outline: 1px solid red;
-
-    transition: box-shadow 5000ms cubic-bezier(0.4, 0, 0.2, 1);
-
+/* 
+    transform: translateY(100%);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) ; */
 }
 
 .item-progect {
