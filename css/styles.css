@@ -136,8 +136,6 @@ html {
     overflow: hidden;
 }
 .exemple-work-card:hover{
-    opacity: 1;
-    
 }
 
 .exemple-work-card {
@@ -145,6 +143,10 @@ html {
     overflow: hidden;
 
 }
+.text-exemple-work:hover {
+    opacity: 1;
+}
+
 .text-exemple-work {
     position: absolute;
     top: 0;
