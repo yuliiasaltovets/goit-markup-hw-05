@@ -133,6 +133,89 @@ html {
     
 }
 .flex-element {
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: hidden;
+}
+.exemple-work-card {
+    position: relative;
+    overflow: hidden;
+}
+.exemple-work-card:hover .text-exemple-work{
+    transform: translateY(0);
+
+}
+.img-exemple-work {
+    overflow: hidden;
+}
+.text-exemple-work:hover {
+    opacity: 1;
+}
+.text-exemple-work {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 370px;
+    height: 294px;
+
+    background-color: rgba(33, 150, 243, 0.9);
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.55;
+        
+    letter-spacing: 0.03em;
+        
+    color: #FFFFFF;
+        
+    padding-top: 63px;
+    padding-right: 24px;
+    padding-bottom: 63px;
+    padding-left: 24px;
+    
+}
+
+/* 
+.img-exemple-work {
+    position: relative;
+}
+.exemple-work-card:hover .text-exemple-work{
+    transform: translateY(0);
+    opacity: 1;
+}
+.text-exemple-work {
+    position: absolute;
+    display: flex;
+    content: '';
+    opacity: 0;
+    transform: translateY(-100%);
+
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity 5000ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(33, 150, 243, 0.9);
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.55;
+    
+    letter-spacing: 0.03em;
+    
+    color: #FFFFFF;
+    padding-top: 63px;
+    padding-right: 24px;
+    padding-bottom: 63px;
+    padding-left: 24px;
+} */
+/* .flex-element {
     overflow: hidden;
 }
 .exemple-work-card:hover{
@@ -179,7 +262,7 @@ html {
     transform: translateY(100%);
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) ; */
-}
+ */
 
 .item-progect {
     padding-top: 24px;
@@ -492,8 +575,13 @@ img {
 .item-work :not(:last-child) {
     margin-right: 0px;
 }
-
+.item-progect {
+    padding-top: 20px;
+    padding-left: 24px;
+    padding-bottom: 20px;
+}
 .item-project {
+    
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
