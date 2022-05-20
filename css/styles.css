@@ -69,6 +69,7 @@ html {
     opacity: 1;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transform: scale(1);
+    
 }
 .backdrop.is-hidden {
     opacity: 0;
@@ -99,6 +100,9 @@ html {
     width: 528px;
     height: 581px;
     background-color: #FFFFFF;
+
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
 }
 
 .portfolio {
@@ -123,6 +127,16 @@ html {
     border: 1px solid #eeeeee;
     
 }
+
+.flex-element:focus {
+    cursor: pointer;
+    display: block;
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+
+
+}
 .flex-element:hover{
     cursor: pointer;
     display: block;
@@ -135,10 +149,16 @@ html {
 .flex-element {
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     overflow: hidden;
+    
+
 }
 .exemple-work-card {
     position: relative;
     overflow: hidden;
+}
+.exemple-work-card:focus.text-exemple-work {
+    transform: translateY(0);
+
 }
 .exemple-work-card:hover .text-exemple-work{
     transform: translateY(0);
@@ -146,6 +166,11 @@ html {
 }
 .img-exemple-work {
     overflow: hidden;
+    position: relative;
+}
+.text-exemple-work:focus {
+    opacity: 1;
+
 }
 .text-exemple-work:hover {
     opacity: 1;
@@ -176,96 +201,10 @@ html {
     padding-left: 24px;
 
     transform: translateY(100%);
-    
-}
-
-/* 
-.img-exemple-work {
-    position: relative;
-}
-.exemple-work-card:hover .text-exemple-work{
-    transform: translateY(0);
-    opacity: 1;
-}
-.text-exemple-work {
-    position: absolute;
-    display: flex;
-    content: '';
-    opacity: 0;
-    transform: translateY(-100%);
-
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: opacity 5000ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-
-    background-color: rgba(33, 150, 243, 0.9);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.55;
-    
-    letter-spacing: 0.03em;
-    
-    color: #FFFFFF;
-    padding-top: 63px;
-    padding-right: 24px;
-    padding-bottom: 63px;
-    padding-left: 24px;
-} */
-/* .flex-element {
-    overflow: hidden;
 }
-.exemple-work-card:hover{
-}
-
-.exemple-work-card {
-    position: relative;
-    overflow: hidden;
-
-}
-.text-exemple-work:hover {
-    opacity: 1;
-}
-
-.text-exemple-work {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 370px;
-    height: 294px;
-    
-    background-color: rgba(33, 150, 243, 0.9);
-
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.55;
-    
-    letter-spacing: 0.03em;
-    
-    color: #FFFFFF;
-
-    padding-top: 63px;
-    padding-right: 24px;
-    padding-bottom: 63px;
-    padding-left: 24px;
-
-    z-index: 1;
-
-    opacity: 0;
-    outline: 1px solid red;
-/* 
-    transform: translateY(100%);
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) ; */
- */
 
 .item-progect {
     padding-top: 24px;
@@ -465,12 +404,18 @@ html {
     align-items: center;
     fill: #757575;
 
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .element:focus {
     color: #2196F3;
 }
 .contact {
     margin-right: 10px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.cntct{
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .cntct:hover {
     fill: #2196F3;
@@ -505,6 +450,8 @@ html {
     padding: 6px 22px;
     border: none;
     margin-left: 8px;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
 
 }
 
@@ -541,6 +488,8 @@ html {
 .element {
     color: #757575;
     text-decoration: none;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
 
 }
 
@@ -660,10 +609,13 @@ img {
     background-color: #FFFFFF;
     border-radius: 50%;
 
+    transition: transform fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+   
 }
 .socials-icon {
     fill:#AFB1B8;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .socials-item:not(:last-child) {
     margin-right: 10px;
@@ -726,6 +678,8 @@ img {
     margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
+
+    transition: transform color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-hero:hover {
@@ -815,6 +769,8 @@ img {
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     margin-right: 30px;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
 }
 .clients-link:not(:last-child) {
@@ -833,6 +789,7 @@ img {
 
 .clients-icon {
     fill: #AFB1B8;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* футер */
 .footer {
@@ -919,9 +876,13 @@ address {
     height: 44px;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .socials-icon-footer {
     fill: #ffffff;
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .socials-link-footer:hover {
