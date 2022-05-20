@@ -89,6 +89,9 @@ html {
     text-align: center;
     justify-content: center;
 
+    margin-top: 8px;
+    margin-right: 8px;
+
 }
 
 .modal {
