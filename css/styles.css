@@ -382,7 +382,7 @@ html {
     display: flex;
     align-items: center;
 }
-
+/* подчеркивание */
 .item-link::after {
    position: absolute;
    bottom: 0;
